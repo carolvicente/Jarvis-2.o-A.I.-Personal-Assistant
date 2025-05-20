@@ -45,9 +45,9 @@ def wishMe():
 	speak(assname)
 	
 
-def usrname():
+def usrname(sr):
 	speak("What should i call you sir")
-	uname = takeCommand()
+	uname = takeCommand(sr)
 	speak("Welcome Mister")
 	speak(uname)
 	columns = shutil.get_terminal_size().columns
@@ -58,7 +58,7 @@ def usrname():
 	
 	speak("How can i Help you, Sir")
 
-def takeCommand():
+def takeCommand(sr):
 	
 	r = sr.Recognizer()
 	
@@ -97,7 +97,7 @@ def orchestrate():
 	# command before execution of this python file
 	clear()
 	wishMe()
-	usrname()
+	usrname(sr)
 	
 	while True:
 		
