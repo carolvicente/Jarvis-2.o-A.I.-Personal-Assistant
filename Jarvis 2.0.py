@@ -18,7 +18,7 @@ import time
 import requests
 import shutil
 import playsound
-import speech_recognizer as sr
+import speech_recognition as sr
 from twilio.rest import Client
 from clint.textui import progress
 from bs4 import BeautifulSoup
