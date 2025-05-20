@@ -1,12 +1,4 @@
-wolframalpha 
-pyttsx3 
-SpeechRecognition 
-wikipedia 
-winshell 
-pyjokes 
-feedparser 
-requests 
-playsound 
-twilio 
-clint 
-beautifulsoup4
+pyttsx3
+wikipedia
+pyjokes
+SpeechRecognition
