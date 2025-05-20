@@ -10,7 +10,6 @@ import datetime
 import wikipedia
 import webbrowser
 import os
-import winshell
 import pyjokes
 import feedparser
 import smtplib
@@ -24,7 +23,6 @@ from twilio.rest import Client
 from clint.textui import progress
 #from ecapture import ecapture as ec
 from bs4 import BeautifulSoup
-import win32com.client as wincl
 from urllib.request import urlopen
 engine = pyttsx3.init('sapi5')
 voices = engine.getProperty('voices')
