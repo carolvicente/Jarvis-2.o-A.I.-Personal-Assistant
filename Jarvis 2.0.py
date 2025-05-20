@@ -96,7 +96,8 @@ def sendEmail(to, content):
 	server.login('your email id', 'your email password')
 	server.sendmail('your email id', to, content)
 	server.close()
-if __name__ == '__main__':
+	
+def orchestrate():
 	clear = lambda: os.system('cls')
 	
 	# This Function will clean any
