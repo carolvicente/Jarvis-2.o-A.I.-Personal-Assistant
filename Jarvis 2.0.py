@@ -5,7 +5,6 @@ import tkinter
 import json
 import random
 import operator
-import speech_recognition as sr
 import datetime
 import wikipedia
 import webbrowser
