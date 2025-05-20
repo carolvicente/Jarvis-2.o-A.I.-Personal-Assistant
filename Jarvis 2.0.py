@@ -31,10 +31,7 @@ engine.setProperty('voice', voices[0].id)
 def speak(audio):
 	engine.say(audio)
 	engine.runAndWait()
-
-os.startfile("C:\\Program Files\\Rainmeter\\Rainmeter.exe")
-playsound.playsound("power up.mp3")  
-playsound.playsound("Jarvis.mp3")	
+	
 def wishMe():
     	
 	hour = int(datetime.datetime.now().hour)
