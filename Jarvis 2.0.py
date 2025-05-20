@@ -114,7 +114,7 @@ def takeCommand(recognizer_instance): # Parameter renamed for clarity
             print("Recognizing...")
             # Use Google's speech recognition.
             recognized_query = r.recognize_google(audio_data, language='en-in') # 'en-in' for Indian English
-            print(f"User said: {recognized_query}\n")
+            print(f"User said: {recognized_query}")
         except sr.UnknownValueError:
             # This error means the speech was unintelligible.
             print("Google Speech Recognition could not understand the audio.")
