@@ -24,9 +24,6 @@ from clint.textui import progress
 #from ecapture import ecapture as ec
 from bs4 import BeautifulSoup
 from urllib.request import urlopen
-engine = pyttsx3.init('sapi5')
-voices = engine.getProperty('voices')
-engine.setProperty('voice', voices[0].id)
 
 def speak(audio):
 	engine.say(audio)
