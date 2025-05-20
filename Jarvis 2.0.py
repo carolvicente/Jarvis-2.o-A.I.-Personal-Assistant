@@ -18,13 +18,16 @@ import time
 import requests
 import shutil
 import playsound
+import speech_recognizer as sr
 from twilio.rest import Client
 from clint.textui import progress
-#from ecapture import ecapture as ec
 from bs4 import BeautifulSoup
 from urllib.request import urlopen
 
 def speak(audio):
+	engine = pyttsx3.init('sapi5')
+	voices = engine.getProperty('voices')
+	engine.setProperty('voice', voices[0].id)
 	engine.say(audio)
 	engine.runAndWait()
 	
@@ -101,7 +104,7 @@ def orchestrate():
 	
 	while True:
 		
-		query = takeCommand().lower()
+		query = takeCommand(sr).lower()
 		
 		# All the commands said by user will be
 		# stored here in 'query' and will be
