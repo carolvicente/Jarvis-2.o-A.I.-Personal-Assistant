@@ -6,6 +6,8 @@ import os       # For OS-level operations like clearing screen and path manipula
 import pyjokes  # To get random jokes
 import shutil   # For high-level file operations, here used for terminal size
 import speech_recognition as sr # For speech-to-text (STT) conversion
+import smtplib
+
 
 # --- Text-to-Speech Function ---
 def speak(audio_text):
@@ -144,6 +146,15 @@ def clear_screen():
     else:
         os.system('clear')
 
+def sendEmail(to, content):
+	server = smtplib.SMTP('smtp.gmail.com', 587)
+	server.ehlo()
+	server.starttls()
+	
+	# Enable low security in gmail
+	server.login('your email id', 'your email password')
+	server.sendmail('your email id', to, content)
+	server.close()
 
 # --- Main Orchestration Function ---
 def orchestrate():
