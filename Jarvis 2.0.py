@@ -225,15 +225,13 @@ def orchestrate():
 
         elif 'how are you' in query:
             speak("I am functioning optimally, Thank you for asking.")
-
-	elif 'play music' in query or "play song" in query:
-		speak("Here you go with music")
-		# music_dir 
-		music_dir = ""
-		songs = os.listdir(music_dir)
-		print(songs)
-		random = os.startfile(os.path.join(music_dir, songs[0]))
-	    
+        elif 'play music' in query or "play song" in query:
+            speak("Here you go with music")
+            # music_dir 
+            music_dir = ""
+            songs = os.listdir(music_dir)
+            print(songs)
+            random = os.startfile(os.path.join(music_dir, songs[0]))
         elif 'fine' in query or "good" in query or "i am good" in query or "i am fine" in query:
             speak("It's good to know that you are fine.")
 
